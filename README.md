@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 
 npx stylelint "**/*.{css,scss}"
+npx eslint "**/*.{js,jsx}"
