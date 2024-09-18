@@ -112,7 +112,11 @@ const Home = () => {
         </table>
       </section>
 
-      <button type="button" onClick={handleLogout}>Logout</button>
+
+      <div className="logout-container">
+    <div className="horizontal-line"></div>
+    <button type="button" onClick={handleLogout}>Logout</button>
+    </div>
     </div>
   );
 };
