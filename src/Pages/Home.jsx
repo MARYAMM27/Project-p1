@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import auth from './firebase';
+import '../Styles/Dashboard.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -71,6 +72,41 @@ const Home = () => {
               <td>20</td>
               <td>13</td>
               <td>0</td>
+            </tr>
+            <tr>
+              <td>Banana (118g)</td>
+              <td>105</td>
+              <td>1.3</td>
+              <td>0.4</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>Spinach (100g)</td>
+              <td>23</td>
+              <td>2.9</td>
+              <td>0.4</td>
+              <td>3.6</td>
+            </tr>
+            <tr>
+              <td>Egg (large)</td>
+              <td>72</td>
+              <td>6.3</td>
+              <td>4.8</td>
+              <td>0.6</td>
+            </tr>
+            <tr>
+              <td>Oats (100g)</td>
+              <td>389</td>
+              <td>16.9</td>
+              <td>6.9</td>
+              <td>66.3</td>
+            </tr>
+            <tr>
+              <td>Avocado (100g)</td>
+              <td>160</td>
+              <td>2</td>
+              <td>15</td>
+              <td>9</td>
             </tr>
           </tbody>
         </table>
