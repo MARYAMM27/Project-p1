@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Home from './Pages/Home';
-import SideMenuLayout from './layouts/SideMenuLayout'; // Common layout for all screens
-import Screen1 from './screens/Screen1'; // About
-import Screen2 from './screens/Screen2'; // Contact
-import Screen3 from './screens/Screen3'; // Feedback
+import SideMenuLayout from './Layouts/SideMenuLayout'; // Common layout for all screens
+import Screen1 from './Screens/Screen1'; // About
+import Screen2 from './Screens/Screen2'; // Contact
+import Screen3 from './Screens/Screen3'; // Feedback
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem('authToken');
