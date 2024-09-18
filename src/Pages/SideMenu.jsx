@@ -11,7 +11,7 @@ const SideMenu = () => {
 
   return (
     <div className={collapsed ? 'side-menu collapsed' : 'side-menu'}>
-      <button className="collapse-button" onClick={toggleMenu}>
+      <button className="collapse-button" type="button" onClick={toggleMenu}>
         {collapsed ? '☰' : '✖'}
       </button>
       <nav>

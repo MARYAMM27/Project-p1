@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
 import { onAuthStateChanged } from 'firebase/auth';
+import auth from './firebase';
 
 const ProtectedRoute = ({ children }) => {
   const navigate = useNavigate();
@@ -9,14 +9,15 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (!user) {
-        navigate('/');
+        navigate('/'); // Redirect to login page if not authenticated
       }
     });
+
+    // Cleanup the subscription on unmount
     return () => unsubscribe();
   }, [navigate]);
 
-  return children;
+  return children; // Render child components if authenticated
 };
 
 export default ProtectedRoute;
-S

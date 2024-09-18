@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebase';
+import auth from './firebase';
 import '../Styles/Login.css'; // Assuming the styles are shared
 
 const Login = () => {
@@ -44,7 +44,10 @@ const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
-      <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+      <p>
+        Don&apos;t have an account?
+        <a href="/signup">Sign Up</a>
+      </p>
     </div>
   );
 };
