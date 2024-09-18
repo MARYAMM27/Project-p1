@@ -1,10 +1,11 @@
 .dashboard-container {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
   padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #1e90ff; /* Make headings a standout color */
 }
 
@@ -16,6 +17,7 @@ ul {
 ul li {
   margin: 10px 0;
 }
+
 /* Smooth transition for screen content */
 .content-container {
   margin-left: 200px; /* Space for the SideMenu */
