@@ -1,0 +1,71 @@
+/* Centering container */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  /* Form styling */
+  .auth-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Max width of the form */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form header */
+  .auth-form h1 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Submit button */
+  .auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for the button */
+  .auth-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Link styling */
+  .auth-container p {
+    margin-top: 15px;
+  }
+  
+  .auth-container a {
+    color: #007bff; /* Primary color for links */
+    text-decoration: none;
+  }
+  
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+  

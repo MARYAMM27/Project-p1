@@ -1,0 +1,29 @@
+.dashboard-container {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #1e90ff; /* Make headings a standout color */
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+/* Smooth transition for screen content */
+.content-container {
+  margin-left: 200px; /* Space for the SideMenu */
+  padding: 20px;
+  flex: 1;
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+.side-menu.collapsed + .content-container {
+  margin-left: 50px; /* Adjust margin when the menu is collapsed */
+}
