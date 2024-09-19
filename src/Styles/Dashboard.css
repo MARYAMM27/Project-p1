@@ -29,3 +29,73 @@ ul li {
 .side-menu.collapsed + .content-container {
   margin-left: 50px; /* Adjust margin when the menu is collapsed */
 }
+.home-container {
+  background-color: #fff; /* Set background to white */
+  color: #000; /* Set text color to black for readability */
+  padding: 20px;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+h1, h2 {
+  color: #1e90ff; /* Standout blue color for headings */
+}
+.nutrition-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000; /* Set the table background to black */
+  color: #fff; /* Set text color to white for readability */
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  border: 1px solid #fff; /* White border for contrast */
+  padding: 10px;
+  text-align: left;
+}
+
+.nutrition-table tbody tr:nth-child(even) {
+  background-color: #333; /* Slightly lighter black for even rows */
+}
+
+.nutrition-table tbody tr:nth-child(odd) {
+  background-color: #000; /* Black background for odd rows */
+}
+button {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3ea6ff;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Space before the button */
+}
+
+.vertical-line {
+  width: 1px;
+  height: 40px;
+  background-color: #000; /* Vertical line color */
+  margin-right: 20px; /* Space between the line and the button */
+}
+
+button {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px; /* Space after the button */
+}
+
+button:hover {
+  background-color: #3ea6ff;
+}
