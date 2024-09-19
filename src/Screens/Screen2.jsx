@@ -1,105 +1,63 @@
-import { useState } from 'react';
+const Screen2 = () => (
+  <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    <h1>Meet Our Trainers and Nutrition Experts</h1>
 
-const Screen2 = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
-  return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-      <h1>Contact Us</h1>
+    {/* Trainer Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Trainer: Emily Johnson</h2>
       <p>
-        If you have any questions or need assistance, please don&apos;t hesitate to contact us
-        through the form below.
+        Emily is a certified personal trainer with over 10 years of experience
+        helping people achieve their fitness goals. She specializes in strength
+        training, weight loss, and functional fitness. Her personalized programs
+        ensure that clients are both challenged and motivated to lead healthier
+        lifestyles.
       </p>
+    </section>
 
-      {submitted ? (
-        <div style={{ color: 'green', marginTop: '20px' }}>
-          <h3>Thank you for reaching out! We will get back to you shortly.</h3>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
-          <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>
-              Name:
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              style={{
-                width: '100%',
-                padding: '10px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
+    {/* Dietitian Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Dietitian: Dr. Sarah Thompson</h2>
+      <p>
+        Dr. Thompson is a registered dietitian who works with individuals to create
+        sustainable and personalized nutrition plans. With a PhD in Nutrition Science,
+        she focuses on providing evidence-based recommendations for weight management,
+        diabetes prevention, and overall health improvement.
+      </p>
+    </section>
 
-          <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>
-              Email:
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{
-                width: '100%',
-                padding: '10px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
+    {/* Nutritionist Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Nutritionist: James Miller</h2>
+      <p>
+        James is a licensed nutritionist with expertise in plant-based diets,
+        sports nutrition, and gut health. His holistic approach to nutrition helps
+        clients improve their eating habits and optimize their health through
+        well-balanced and nutrient-rich meals.
+      </p>
+    </section>
 
-          <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>
-              Message:
-            </label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-              rows="6"
-              style={{
-                width: '100%',
-                padding: '10px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
+    {/* Fitness Expert Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Fitness Expert: Lisa Brown</h2>
+      <p>
+        Lisa is a fitness expert who integrates exercise science with practical
+        approaches to health and fitness. She specializes in high-intensity interval
+        training (HIIT) and helps clients achieve their fitness goals through
+        personalized programs and ongoing support.
+      </p>
+    </section>
 
-          <button
-            type="submit"
-            style={{
-              backgroundColor: '#1e90ff',
-              color: 'white',
-              border: 'none',
-              padding: '10px 20px',
-              cursor: 'pointer',
-              borderRadius: '4px',
-              fontSize: '16px',
-            }}
-          >
-            Submit
-          </button>
-        </form>
-      )}
-    </div>
-  );
-};
+    {/* Wellness Coach Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Wellness Coach: Michael Harris</h2>
+      <p>
+        Michael is a wellness coach who focuses on mental and physical well-being.
+        With a background in psychology and nutrition, he helps clients develop
+        healthy habits and improve their relationship with food through mindful
+        eating practices and stress management techniques.
+      </p>
+    </section>
+  </div>
+);
 
 export default Screen2;

@@ -1,103 +1,74 @@
-import { useState } from 'react';
+const Screen3 = () => (
+  <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    <h1>About Nutrition</h1>
 
-const Screen3 = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [feedbackSubmitted, setFeedbackSubmitted] = useState(false);
+    {/* Where Can We Get Protein From? Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Where Can We Get Protein From?</h2>
+      <p>
+        Protein is essential for muscle repair, growth, and overall health.
+        You can get protein from a variety of sources including:
+      </p>
+      <ul>
+        <li>Lean meats like chicken, turkey, and beef</li>
+        <li>Fish and seafood like salmon, tuna, and shrimp</li>
+        <li>Plant-based sources like beans, lentils, tofu, and quinoa</li>
+        <li>Dairy products such as yogurt, milk, and cheese</li>
+        <li>Nuts and seeds like almonds, chia seeds, and peanuts</li>
+        <li>Eggs, which are a complete source of protein</li>
+      </ul>
+    </section>
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle feedback submission logic here (e.g., sending to server)
-    setFeedbackSubmitted(true);
-  };
+    {/* Where Can We Get Carbohydrates From? Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>Where Can We Get Carbohydrates From?</h2>
+      <p>
+        Carbohydrates are the body&#39;s primary source of energy.
+        Here are some healthy sources of carbohydrates:
+      </p>
+      <ul>
+        <li>Whole grains like brown rice, quinoa, oats, and whole wheat</li>
+        <li>Fruits such as apples, bananas, and berries</li>
+        <li>Vegetables like sweet potatoes, carrots, and broccoli</li>
+        <li>Legumes such as beans, lentils, and peas</li>
+        <li>Low-fat dairy products including milk and yogurt</li>
+      </ul>
+    </section>
 
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>Feedback</h1>
-      <p>We value your feedback to improve our service. Please fill in the form below:</p>
-
-      {feedbackSubmitted ? (
-        <div style={{ color: 'green', marginTop: '20px' }}>
-          <h3>Thank you for your feedback!</h3>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ maxWidth: '600px', marginTop: '20px' }}>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>
-              Name:
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              style={{
-                width: '100%',
-                padding: '8px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
-
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>
-              Email:
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{
-                width: '100%',
-                padding: '8px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
-
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>
-              Feedback:
-            </label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-              rows="5"
-              style={{
-                width: '100%',
-                padding: '8px',
-                borderRadius: '4px',
-                border: '1px solid #ccc',
-              }}
-            />
-          </div>
-
-          <button
-            type="submit"
-            style={{
-              backgroundColor: '#1e90ff',
-              color: 'white',
-              border: 'none',
-              padding: '10px 20px',
-              cursor: 'pointer',
-              borderRadius: '4px',
-              fontSize: '16px',
-            }}
-          >
-            Submit Feedback
-          </button>
-        </form>
-      )}
-    </div>
-  );
-};
+    {/* Macro vs Micro Nutrients Section */}
+    <section style={{ marginBottom: '30px' }}>
+      <h2>What is the Difference Between Macro and Micro Nutrients?</h2>
+      <p>
+        Nutrients are classified into two main categories: macronutrients and micronutrients.
+      </p>
+      <p>
+        <strong>Macronutrients</strong>
+        {' '}
+        are nutrients that your body needs in large amounts
+        to provide energy and support bodily functions. The three macronutrients are:
+      </p>
+      <ul>
+        <li>Proteins</li>
+        <li>Carbohydrates</li>
+        <li>Fats</li>
+      </ul>
+      <p>
+        <strong>Micronutrients</strong>
+        {' '}
+        are nutrients that your body needs in smaller amounts,
+        but they are still vital for overall health. These include:
+      </p>
+      <ul>
+        <li>Vitamins (e.g., Vitamin C, Vitamin D, and Vitamin B12)</li>
+        <li>Minerals (e.g., Calcium, Iron, and Magnesium)</li>
+      </ul>
+      <p>
+        Both macronutrients and micronutrients are crucial for maintaining a healthy body,
+        with macronutrients providing energy and micronutrients supporting various functions
+        such as immunity, bone health, and energy production.
+      </p>
+    </section>
+  </div>
+);
 
 export default Screen3;
