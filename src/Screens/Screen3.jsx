@@ -8,8 +8,7 @@ const Screen3 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to handle feedback submission, like sending it to a server or logging it
-    console.log({ name, email, message });
+    // Handle feedback submission logic here (e.g., sending to server)
     setFeedbackSubmitted(true);
   };
 
@@ -25,38 +24,59 @@ const Screen3 = () => {
       ) : (
         <form onSubmit={handleSubmit} style={{ maxWidth: '600px', marginTop: '20px' }}>
           <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>Name:</label>
+            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>
+              Name:
+            </label>
             <input
               type="text"
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }}
+              style={{
+                width: '100%',
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+              }}
             />
           </div>
 
           <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email:</label>
+            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>
+              Email:
+            </label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }}
+              style={{
+                width: '100%',
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+              }}
             />
           </div>
 
           <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>Feedback:</label>
+            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>
+              Feedback:
+            </label>
             <textarea
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
               rows="5"
-              style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }}
+              style={{
+                width: '100%',
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+              }}
             />
           </div>
 
@@ -69,7 +89,7 @@ const Screen3 = () => {
               padding: '10px 20px',
               cursor: 'pointer',
               borderRadius: '4px',
-              fontSize: '16px'
+              fontSize: '16px',
             }}
           >
             Submit Feedback

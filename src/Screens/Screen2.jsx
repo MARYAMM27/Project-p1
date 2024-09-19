@@ -8,15 +8,16 @@ const Screen2 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle contact form submission logic here
-    console.log({ name, email, message });
     setSubmitted(true);
   };
 
   return (
     <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
       <h1>Contact Us</h1>
-      <p>If you have any questions or need assistance, please don't hesitate to contact us through the form below.</p>
+      <p>
+        If you have any questions or need assistance, please don&apos;t hesitate to contact us
+        through the form below.
+      </p>
 
       {submitted ? (
         <div style={{ color: 'green', marginTop: '20px' }}>
@@ -25,7 +26,9 @@ const Screen2 = () => {
       ) : (
         <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
           <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>Name:</label>
+            <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>
+              Name:
+            </label>
             <input
               type="text"
               id="name"
@@ -42,7 +45,9 @@ const Screen2 = () => {
           </div>
 
           <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email:</label>
+            <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>
+              Email:
+            </label>
             <input
               type="email"
               id="email"
@@ -59,7 +64,9 @@ const Screen2 = () => {
           </div>
 
           <div style={{ marginBottom: '15px' }}>
-            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>Message:</label>
+            <label htmlFor="message" style={{ display: 'block', marginBottom: '5px' }}>
+              Message:
+            </label>
             <textarea
               id="message"
               value={message}

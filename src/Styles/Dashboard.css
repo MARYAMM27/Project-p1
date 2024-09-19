@@ -29,6 +29,7 @@ ul li {
 .side-menu.collapsed + .content-container {
   margin-left: 50px; /* Adjust margin when the menu is collapsed */
 }
+
 .home-container {
   background-color: #fff; /* Set background to white */
   color: #000; /* Set text color to black for readability */
@@ -36,9 +37,6 @@ ul li {
   min-height: 100vh; /* Ensure it covers the full viewport height */
 }
 
-h1, h2 {
-  color: #1e90ff; /* Standout blue color for headings */
-}
 .nutrition-table table {
   width: 100%;
   border-collapse: collapse;
@@ -60,6 +58,7 @@ h1, h2 {
 .nutrition-table tbody tr:nth-child(odd) {
   background-color: #000; /* Black background for odd rows */
 }
+
 button {
   background-color: #1e90ff;
   border: none;
@@ -67,6 +66,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  margin-left: 20px; /* Space after the button */
 }
 
 button:hover {
@@ -84,18 +84,4 @@ button:hover {
   height: 40px;
   background-color: #000; /* Vertical line color */
   margin-right: 20px; /* Space between the line and the button */
-}
-
-button {
-  background-color: #1e90ff;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 20px; /* Space after the button */
-}
-
-button:hover {
-  background-color: #3ea6ff;
 }
