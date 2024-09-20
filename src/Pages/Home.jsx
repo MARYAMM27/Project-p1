@@ -1,13 +1,14 @@
-import { useNavigate } from 'react-router-dom';
-import auth from './firebase';
-import '../Styles/Dashboard.css';
+import { useNavigate } from "react-router-dom";
+import auth from "./firebase";
+import "../Styles/Dashboard.css";
 
 const Home = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
     auth.signOut();
-    navigate('/');
+    localStorage.removeItem("authToken");
+    navigate("/");
   };
 
   return (
@@ -17,9 +18,9 @@ const Home = () => {
       <section className="nutrition-info">
         <h2>Importance of Nutrition</h2>
         <p>
-          Nutrition plays a crucial role in maintaining health and well-being.
-          A balanced diet provides the necessary vitamins, minerals, and
-          nutrients that help your body function properly. Eating a variety of
+          Nutrition plays a crucial role in maintaining health and well-being. A
+          balanced diet provides the necessary vitamins, minerals, and nutrients
+          that help your body function properly. Eating a variety of
           nutrient-rich foods ensures that you meet your daily energy and
           nutritional requirements.
         </p>
@@ -114,7 +115,9 @@ const Home = () => {
 
       <div className="logout-container">
         <div className="horizontal-line" />
-        <button type="button" onClick={handleLogout}>Logout</button>
+        <button type="button" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
