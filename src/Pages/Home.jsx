@@ -1,14 +1,14 @@
-import { useNavigate } from "react-router-dom";
-import auth from "./firebase";
-import "../Styles/Dashboard.css";
+import { useNavigate } from 'react-router-dom';
+import auth from './firebase';
+import '../Styles/Dashboard.css';
 
 const Home = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
     auth.signOut();
-    localStorage.removeItem("authToken");
-    navigate("/");
+    localStorage.removeItem('authToken');
+    navigate('/');
   };
 
   return (
