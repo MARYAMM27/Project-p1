@@ -1,0 +1,85 @@
+/* SideMenu Styles */
+.side-menu {
+  background-color: #111; /* Dark background */
+  color: white;
+  height: 100vh;
+  width: 200px; /* Full width when expanded */
+  transition: width 0.3s ease; /* Smooth transition */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Collapsed state */
+.side-menu.collapsed {
+  width: 50px; /* Smaller width when collapsed */
+}
+
+/* Collapse button */
+.collapse-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  align-self: flex-end; /* Align collapse button to the right */
+  margin-right: 10px;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Aligning the icons and text */
+nav ul li {
+  margin: 20px 0;
+  text-align: left; /* Align text */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+/* Link style */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Icon style */
+nav ul li .icon {
+  font-size: 20px; /* Ensure icons are large and uniform */
+  margin-right: 15px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Text for links */
+nav ul li .text {
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+/* Hide text when collapsed */
+.side-menu.collapsed .text {
+  display: none; /* Hide the text when collapsed */
+}
+
+/* Hover effect */
+nav ul li:hover {
+  background-color: #34495e; /* Slightly lighter when hovering */
+  cursor: pointer;
+}
