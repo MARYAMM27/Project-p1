@@ -12,7 +12,7 @@ import SideMenuLayout from './Layouts/SideMenuLayout'; // Common layout for all 
 import Screen1 from './Screens/Screen1'; // About
 import Screen2 from './Screens/Screen2'; // Contact
 import Screen3 from './Screens/Screen3'; // Feedback
-import ToDoList from './Pages/TodoList'; // Import ToDoList
+import ToDoList from './Pages/TodoList';
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem('authToken');
