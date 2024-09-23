@@ -12,6 +12,7 @@ import SideMenuLayout from './Layouts/SideMenuLayout'; // Common layout for all 
 import Screen1 from './Screens/Screen1'; // About
 import Screen2 from './Screens/Screen2'; // Contact
 import Screen3 from './Screens/Screen3'; // Feedback
+import GroceryStore from './Pages/GroceryStore'; // Import the GroceryStore component
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem('authToken');
@@ -66,6 +67,16 @@ const AppRoutes = () => (
           <ProtectedRoute>
             <SideMenuLayout>
               <Screen3 />
+            </SideMenuLayout>
+          </ProtectedRoute>
+        )}
+      />
+      <Route
+        path="/grocery-store"
+        element={(
+          <ProtectedRoute>
+            <SideMenuLayout>
+              <GroceryStore />
             </SideMenuLayout>
           </ProtectedRoute>
         )}

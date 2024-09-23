@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import auth from './firebase';
+import { auth } from './firebase'; // Updated import
 import '../Styles/Login.css'; // Assuming the styles are shared
 
 const Login = () => {
@@ -27,10 +27,9 @@ const Login = () => {
       // Store the token in localStorage
       localStorage.setItem('authToken', token);
 
-      // Redirect to the 'about' page
+      // Redirect to the 'home' page
       setTimeout(() => navigate('/home'));
     } catch (error) {
-      // console.error('Error signing in:', error);
       setError('Invalid email or password');
     }
   };

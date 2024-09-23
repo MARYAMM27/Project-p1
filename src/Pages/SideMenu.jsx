@@ -38,7 +38,13 @@ const SideMenu = () => {
           <li>
             <Link to="/feedback">
               <span className="icon">💬</span>
-              <span className={collapsed ? 'collapsed-text' : 'text'}>Information</span>
+              <span className={collapsed ? 'collapsed-text' : 'text'}>Feedback</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/grocery-store">
+              <span className="icon">🛒</span>
+              <span className={collapsed ? 'collapsed-text' : 'text'}>Grocery Store</span>
             </Link>
           </li>
         </ul>
