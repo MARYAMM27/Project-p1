@@ -16,7 +16,6 @@ const SideMenu = () => {
       </button>
       <nav>
         <ul>
-          {/* Adding Home link */}
           <li>
             <Link to="/home">
               <span className="icon">🏠</span>
@@ -42,9 +41,11 @@ const SideMenu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/grocery-store">
-              <span className="icon">🛒</span>
-              <span className={collapsed ? 'collapsed-text' : 'text'}>Grocery Store</span>
+            <Link to="/todolist">
+              {' '}
+              {/* Link to To-Do List */}
+              <span className="icon">📝</span>
+              <span className={collapsed ? 'collapsed-text' : 'text'}>To-Do List</span>
             </Link>
           </li>
         </ul>

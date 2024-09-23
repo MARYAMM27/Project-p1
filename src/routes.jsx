@@ -12,7 +12,7 @@ import SideMenuLayout from './Layouts/SideMenuLayout'; // Common layout for all 
 import Screen1 from './Screens/Screen1'; // About
 import Screen2 from './Screens/Screen2'; // Contact
 import Screen3 from './Screens/Screen3'; // Feedback
-import GroceryStore from './Pages/GroceryStore'; // Import the GroceryStore component
+import ToDoList from './Pages/TodoList'; // Import ToDoList
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem('authToken');
@@ -72,11 +72,13 @@ const AppRoutes = () => (
         )}
       />
       <Route
-        path="/grocery-store"
+        path="/todolist" // Path for ToDoList
         element={(
           <ProtectedRoute>
             <SideMenuLayout>
-              <GroceryStore />
+              <ToDoList />
+              {' '}
+              {/* Use ToDoList component */}
             </SideMenuLayout>
           </ProtectedRoute>
         )}
