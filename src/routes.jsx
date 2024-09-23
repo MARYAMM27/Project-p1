@@ -77,7 +77,6 @@ const AppRoutes = () => (
           <ProtectedRoute>
             <SideMenuLayout>
               <ToDoList />
-              {' '}
               {/* Use ToDoList component */}
             </SideMenuLayout>
           </ProtectedRoute>
