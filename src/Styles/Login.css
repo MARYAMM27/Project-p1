@@ -19,7 +19,8 @@
   margin: 0 auto; /* Center the form horizontally */
 }
 
-.auth-form input, .auth-form button {
+.auth-form input,
+.auth-form button {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -36,7 +37,6 @@
   transition: background-color 0.3s;
 }
 
-
 .auth-form button:hover {
   background-color: #213688;
 }
@@ -46,7 +46,6 @@
   font-size: 14px;
   text-align: center;
 }
-
 
 .auth-container a {
   color: #007bff;
