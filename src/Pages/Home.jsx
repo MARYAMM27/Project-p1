@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import auth from './firebase';
+import { auth } from './firebase'; // Updated import
 import '../Styles/Dashboard.css';
 
 const Home = () => {
